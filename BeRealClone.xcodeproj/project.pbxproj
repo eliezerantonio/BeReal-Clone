@@ -1,0 +1,709 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D7F912682BC40C4700E5D05C /* BeRealCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F912672BC40C4700E5D05C /* BeRealCloneApp.swift */; };
+		D7F9126A2BC40C4700E5D05C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F912692BC40C4700E5D05C /* ContentView.swift */; };
+		D7F9126C2BC40C4800E5D05C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7F9126B2BC40C4800E5D05C /* Assets.xcassets */; };
+		D7F9126F2BC40C4800E5D05C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7F9126E2BC40C4800E5D05C /* Preview Assets.xcassets */; };
+		D7F912792BC40C4800E5D05C /* BeRealCloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F912782BC40C4800E5D05C /* BeRealCloneTests.swift */; };
+		D7F912832BC40C4800E5D05C /* BeRealCloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F912822BC40C4800E5D05C /* BeRealCloneUITests.swift */; };
+		D7F912852BC40C4800E5D05C /* BeRealCloneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F912842BC40C4800E5D05C /* BeRealCloneUITestsLaunchTests.swift */; };
+		D7F912922BC40E6E00E5D05C /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F912912BC40E6E00E5D05C /* Feed.swift */; };
+		D7F912952BC416A600E5D05C /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F912942BC416A600E5D05C /* FeedCell.swift */; };
+		D7F912982BC43A5800E5D05C /* ThreeDots.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F912972BC43A5800E5D05C /* ThreeDots.swift */; };
+		D7F9129A2BC4648600E5D05C /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F912992BC4648600E5D05C /* Profile.swift */; };
+		D7F9129D2BC4AD8200E5D05C /* MemoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F9129C2BC4AD8200E5D05C /* MemoryView.swift */; };
+		D7F9129F2BC4B62E00E5D05C /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F9129E2BC4B62E00E5D05C /* Settings.swift */; };
+		D7F912A12BC5F1DE00E5D05C /* EditProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F912A02BC5F1DE00E5D05C /* EditProfile.swift */; };
+		D7F912A42BC6633400E5D05C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F912A32BC6633400E5D05C /* Extensions.swift */; };
+		D7F912A62BC66F4000E5D05C /* TimeZoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F912A52BC66F4000E5D05C /* TimeZoneView.swift */; };
+		D7F912A92BC6848600E5D05C /* LeftMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F912A82BC6848600E5D05C /* LeftMenu.swift */; };
+		D7F912AB2BC686A000E5D05C /* LeftMenuTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F912AA2BC686A000E5D05C /* LeftMenuTopView.swift */; };
+		D7F912AE2BC6875000E5D05C /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F912AD2BC6875000E5D05C /* SearchBar.swift */; };
+		D7F912B02BC6973200E5D05C /* Suggestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F912AF2BC6973200E5D05C /* Suggestions.swift */; };
+		D7F912B22BC69AC500E5D05C /* SuggestionCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F912B12BC69AC500E5D05C /* SuggestionCellView.swift */; };
+		D7F912B42BC6D19F00E5D05C /* FriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F912B32BC6D19F00E5D05C /* FriendsView.swift */; };
+		D7F912B62BC6D30E00E5D05C /* FriendsCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F912B52BC6D30E00E5D05C /* FriendsCellView.swift */; };
+		D7F912B82BC6F6FB00E5D05C /* RequestsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F912B72BC6F6FB00E5D05C /* RequestsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D7F912752BC40C4800E5D05C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7F9125C2BC40C4700E5D05C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7F912632BC40C4700E5D05C;
+			remoteInfo = BeRealClone;
+		};
+		D7F9127F2BC40C4800E5D05C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7F9125C2BC40C4700E5D05C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7F912632BC40C4700E5D05C;
+			remoteInfo = BeRealClone;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D7F912642BC40C4700E5D05C /* BeRealClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeRealClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7F912672BC40C4700E5D05C /* BeRealCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeRealCloneApp.swift; sourceTree = "<group>"; };
+		D7F912692BC40C4700E5D05C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D7F9126B2BC40C4800E5D05C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D7F9126E2BC40C4800E5D05C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D7F912742BC40C4800E5D05C /* BeRealCloneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeRealCloneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7F912782BC40C4800E5D05C /* BeRealCloneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeRealCloneTests.swift; sourceTree = "<group>"; };
+		D7F9127E2BC40C4800E5D05C /* BeRealCloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeRealCloneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7F912822BC40C4800E5D05C /* BeRealCloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeRealCloneUITests.swift; sourceTree = "<group>"; };
+		D7F912842BC40C4800E5D05C /* BeRealCloneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeRealCloneUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D7F912912BC40E6E00E5D05C /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		D7F912942BC416A600E5D05C /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		D7F912972BC43A5800E5D05C /* ThreeDots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDots.swift; sourceTree = "<group>"; };
+		D7F912992BC4648600E5D05C /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		D7F9129C2BC4AD8200E5D05C /* MemoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryView.swift; sourceTree = "<group>"; };
+		D7F9129E2BC4B62E00E5D05C /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		D7F912A02BC5F1DE00E5D05C /* EditProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfile.swift; sourceTree = "<group>"; };
+		D7F912A32BC6633400E5D05C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D7F912A52BC66F4000E5D05C /* TimeZoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneView.swift; sourceTree = "<group>"; };
+		D7F912A82BC6848600E5D05C /* LeftMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenu.swift; sourceTree = "<group>"; };
+		D7F912AA2BC686A000E5D05C /* LeftMenuTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuTopView.swift; sourceTree = "<group>"; };
+		D7F912AD2BC6875000E5D05C /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		D7F912AF2BC6973200E5D05C /* Suggestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suggestions.swift; sourceTree = "<group>"; };
+		D7F912B12BC69AC500E5D05C /* SuggestionCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionCellView.swift; sourceTree = "<group>"; };
+		D7F912B32BC6D19F00E5D05C /* FriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsView.swift; sourceTree = "<group>"; };
+		D7F912B52BC6D30E00E5D05C /* FriendsCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsCellView.swift; sourceTree = "<group>"; };
+		D7F912B72BC6F6FB00E5D05C /* RequestsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7F912612BC40C4700E5D05C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7F912712BC40C4800E5D05C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7F9127B2BC40C4800E5D05C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D7F9125B2BC40C4700E5D05C = {
+			isa = PBXGroup;
+			children = (
+				D7F912662BC40C4700E5D05C /* BeRealClone */,
+				D7F912772BC40C4800E5D05C /* BeRealCloneTests */,
+				D7F912812BC40C4800E5D05C /* BeRealCloneUITests */,
+				D7F912652BC40C4700E5D05C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D7F912652BC40C4700E5D05C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7F912642BC40C4700E5D05C /* BeRealClone.app */,
+				D7F912742BC40C4800E5D05C /* BeRealCloneTests.xctest */,
+				D7F9127E2BC40C4800E5D05C /* BeRealCloneUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7F912662BC40C4700E5D05C /* BeRealClone */ = {
+			isa = PBXGroup;
+			children = (
+				D7F9129B2BC4AD7400E5D05C /* Views */,
+				D7F912932BC4168D00E5D05C /* Shared */,
+				D7F912672BC40C4700E5D05C /* BeRealCloneApp.swift */,
+				D7F912692BC40C4700E5D05C /* ContentView.swift */,
+				D7F9126B2BC40C4800E5D05C /* Assets.xcassets */,
+				D7F9126D2BC40C4800E5D05C /* Preview Content */,
+			);
+			path = BeRealClone;
+			sourceTree = "<group>";
+		};
+		D7F9126D2BC40C4800E5D05C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D7F9126E2BC40C4800E5D05C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D7F912772BC40C4800E5D05C /* BeRealCloneTests */ = {
+			isa = PBXGroup;
+			children = (
+				D7F912782BC40C4800E5D05C /* BeRealCloneTests.swift */,
+			);
+			path = BeRealCloneTests;
+			sourceTree = "<group>";
+		};
+		D7F912812BC40C4800E5D05C /* BeRealCloneUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D7F912822BC40C4800E5D05C /* BeRealCloneUITests.swift */,
+				D7F912842BC40C4800E5D05C /* BeRealCloneUITestsLaunchTests.swift */,
+			);
+			path = BeRealCloneUITests;
+			sourceTree = "<group>";
+		};
+		D7F912932BC4168D00E5D05C /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				D7F912AC2BC6873B00E5D05C /* Items */,
+				D7F912A72BC6847300E5D05C /* LeftMenu */,
+				D7F912A22BC6632500E5D05C /* Extensions */,
+				D7F912962BC43A4200E5D05C /* Helpers */,
+				D7F912912BC40E6E00E5D05C /* Feed.swift */,
+				D7F912942BC416A600E5D05C /* FeedCell.swift */,
+				D7F912992BC4648600E5D05C /* Profile.swift */,
+				D7F9129E2BC4B62E00E5D05C /* Settings.swift */,
+				D7F912A02BC5F1DE00E5D05C /* EditProfile.swift */,
+				D7F912A52BC66F4000E5D05C /* TimeZoneView.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		D7F912962BC43A4200E5D05C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D7F912972BC43A5800E5D05C /* ThreeDots.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D7F9129B2BC4AD7400E5D05C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D7F9129C2BC4AD8200E5D05C /* MemoryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D7F912A22BC6632500E5D05C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D7F912A32BC6633400E5D05C /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D7F912A72BC6847300E5D05C /* LeftMenu */ = {
+			isa = PBXGroup;
+			children = (
+				D7F912A82BC6848600E5D05C /* LeftMenu.swift */,
+				D7F912AA2BC686A000E5D05C /* LeftMenuTopView.swift */,
+				D7F912AF2BC6973200E5D05C /* Suggestions.swift */,
+				D7F912B12BC69AC500E5D05C /* SuggestionCellView.swift */,
+				D7F912B32BC6D19F00E5D05C /* FriendsView.swift */,
+				D7F912B52BC6D30E00E5D05C /* FriendsCellView.swift */,
+				D7F912B72BC6F6FB00E5D05C /* RequestsView.swift */,
+			);
+			path = LeftMenu;
+			sourceTree = "<group>";
+		};
+		D7F912AC2BC6873B00E5D05C /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				D7F912AD2BC6875000E5D05C /* SearchBar.swift */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D7F912632BC40C4700E5D05C /* BeRealClone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7F912882BC40C4800E5D05C /* Build configuration list for PBXNativeTarget "BeRealClone" */;
+			buildPhases = (
+				D7F912602BC40C4700E5D05C /* Sources */,
+				D7F912612BC40C4700E5D05C /* Frameworks */,
+				D7F912622BC40C4700E5D05C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeRealClone;
+			productName = BeRealClone;
+			productReference = D7F912642BC40C4700E5D05C /* BeRealClone.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D7F912732BC40C4800E5D05C /* BeRealCloneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7F9128B2BC40C4800E5D05C /* Build configuration list for PBXNativeTarget "BeRealCloneTests" */;
+			buildPhases = (
+				D7F912702BC40C4800E5D05C /* Sources */,
+				D7F912712BC40C4800E5D05C /* Frameworks */,
+				D7F912722BC40C4800E5D05C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D7F912762BC40C4800E5D05C /* PBXTargetDependency */,
+			);
+			name = BeRealCloneTests;
+			productName = BeRealCloneTests;
+			productReference = D7F912742BC40C4800E5D05C /* BeRealCloneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D7F9127D2BC40C4800E5D05C /* BeRealCloneUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7F9128E2BC40C4800E5D05C /* Build configuration list for PBXNativeTarget "BeRealCloneUITests" */;
+			buildPhases = (
+				D7F9127A2BC40C4800E5D05C /* Sources */,
+				D7F9127B2BC40C4800E5D05C /* Frameworks */,
+				D7F9127C2BC40C4800E5D05C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D7F912802BC40C4800E5D05C /* PBXTargetDependency */,
+			);
+			name = BeRealCloneUITests;
+			productName = BeRealCloneUITests;
+			productReference = D7F9127E2BC40C4800E5D05C /* BeRealCloneUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7F9125C2BC40C4700E5D05C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					D7F912632BC40C4700E5D05C = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					D7F912732BC40C4800E5D05C = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = D7F912632BC40C4700E5D05C;
+					};
+					D7F9127D2BC40C4800E5D05C = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = D7F912632BC40C4700E5D05C;
+					};
+				};
+			};
+			buildConfigurationList = D7F9125F2BC40C4700E5D05C /* Build configuration list for PBXProject "BeRealClone" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D7F9125B2BC40C4700E5D05C;
+			productRefGroup = D7F912652BC40C4700E5D05C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D7F912632BC40C4700E5D05C /* BeRealClone */,
+				D7F912732BC40C4800E5D05C /* BeRealCloneTests */,
+				D7F9127D2BC40C4800E5D05C /* BeRealCloneUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D7F912622BC40C4700E5D05C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7F9126F2BC40C4800E5D05C /* Preview Assets.xcassets in Resources */,
+				D7F9126C2BC40C4800E5D05C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7F912722BC40C4800E5D05C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7F9127C2BC40C4800E5D05C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7F912602BC40C4700E5D05C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7F9129D2BC4AD8200E5D05C /* MemoryView.swift in Sources */,
+				D7F9126A2BC40C4700E5D05C /* ContentView.swift in Sources */,
+				D7F9129F2BC4B62E00E5D05C /* Settings.swift in Sources */,
+				D7F912A62BC66F4000E5D05C /* TimeZoneView.swift in Sources */,
+				D7F9129A2BC4648600E5D05C /* Profile.swift in Sources */,
+				D7F912AB2BC686A000E5D05C /* LeftMenuTopView.swift in Sources */,
+				D7F912B22BC69AC500E5D05C /* SuggestionCellView.swift in Sources */,
+				D7F912B02BC6973200E5D05C /* Suggestions.swift in Sources */,
+				D7F912A92BC6848600E5D05C /* LeftMenu.swift in Sources */,
+				D7F912B42BC6D19F00E5D05C /* FriendsView.swift in Sources */,
+				D7F912AE2BC6875000E5D05C /* SearchBar.swift in Sources */,
+				D7F912982BC43A5800E5D05C /* ThreeDots.swift in Sources */,
+				D7F912B82BC6F6FB00E5D05C /* RequestsView.swift in Sources */,
+				D7F912A42BC6633400E5D05C /* Extensions.swift in Sources */,
+				D7F912952BC416A600E5D05C /* FeedCell.swift in Sources */,
+				D7F912922BC40E6E00E5D05C /* Feed.swift in Sources */,
+				D7F912682BC40C4700E5D05C /* BeRealCloneApp.swift in Sources */,
+				D7F912B62BC6D30E00E5D05C /* FriendsCellView.swift in Sources */,
+				D7F912A12BC5F1DE00E5D05C /* EditProfile.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7F912702BC40C4800E5D05C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7F912792BC40C4800E5D05C /* BeRealCloneTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7F9127A2BC40C4800E5D05C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7F912832BC40C4800E5D05C /* BeRealCloneUITests.swift in Sources */,
+				D7F912852BC40C4800E5D05C /* BeRealCloneUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D7F912762BC40C4800E5D05C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7F912632BC40C4700E5D05C /* BeRealClone */;
+			targetProxy = D7F912752BC40C4800E5D05C /* PBXContainerItemProxy */;
+		};
+		D7F912802BC40C4800E5D05C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7F912632BC40C4700E5D05C /* BeRealClone */;
+			targetProxy = D7F9127F2BC40C4800E5D05C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D7F912862BC40C4800E5D05C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D7F912872BC40C4800E5D05C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D7F912892BC40C4800E5D05C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BeRealClone/Preview Content\"";
+				DEVELOPMENT_TEAM = 4BP297K7GX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eliezer.antonio.BeRealClone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D7F9128A2BC40C4800E5D05C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BeRealClone/Preview Content\"";
+				DEVELOPMENT_TEAM = 4BP297K7GX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eliezer.antonio.BeRealClone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D7F9128C2BC40C4800E5D05C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4BP297K7GX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eliezer.antonio.BeRealCloneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeRealClone.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BeRealClone";
+			};
+			name = Debug;
+		};
+		D7F9128D2BC40C4800E5D05C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4BP297K7GX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eliezer.antonio.BeRealCloneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeRealClone.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BeRealClone";
+			};
+			name = Release;
+		};
+		D7F9128F2BC40C4800E5D05C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4BP297K7GX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eliezer.antonio.BeRealCloneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BeRealClone;
+			};
+			name = Debug;
+		};
+		D7F912902BC40C4800E5D05C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4BP297K7GX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eliezer.antonio.BeRealCloneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BeRealClone;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7F9125F2BC40C4700E5D05C /* Build configuration list for PBXProject "BeRealClone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7F912862BC40C4800E5D05C /* Debug */,
+				D7F912872BC40C4800E5D05C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7F912882BC40C4800E5D05C /* Build configuration list for PBXNativeTarget "BeRealClone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7F912892BC40C4800E5D05C /* Debug */,
+				D7F9128A2BC40C4800E5D05C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7F9128B2BC40C4800E5D05C /* Build configuration list for PBXNativeTarget "BeRealCloneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7F9128C2BC40C4800E5D05C /* Debug */,
+				D7F9128D2BC40C4800E5D05C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7F9128E2BC40C4800E5D05C /* Build configuration list for PBXNativeTarget "BeRealCloneUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7F9128F2BC40C4800E5D05C /* Debug */,
+				D7F912902BC40C4800E5D05C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D7F9125C2BC40C4700E5D05C /* Project object */;
+}
