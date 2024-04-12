@@ -7,7 +7,8 @@
 
 import SwiftUI
 
-struct Feed: View {
+struct FeedView: View {
+    @Binding var mainMenu: String
     var body: some View {
         ZStack {
             Color.black.ignoresSafeArea()
@@ -68,10 +69,15 @@ struct Feed: View {
                 VStack {
                     VStack {
                         HStack {
-                            Image(systemName: "person.2.fill")
-                                .foregroundStyle(.white
-                                )
-
+                            Button {
+                                withAnimation {
+                                    self.mainMenu = "left"
+                                }
+                            } label: {
+                                Image(systemName: "person.2.fill")
+                                    .foregroundStyle(.white
+                                    )
+                            }
                             Spacer()
 
                             Text("BeReal")
@@ -81,10 +87,16 @@ struct Feed: View {
 
                             Spacer()
 
-                            Image("eliezer")
-                                .resizable()
-                                .frame(width: 40, height: 50)
-                                .clipShape(Circle())
+                            Button {
+                                withAnimation {
+                                    self.mainMenu = "profile"
+                                }
+                            } label: {
+                                Image("eliezer")
+                                    .resizable()
+                                    .frame(width: 40, height: 50)
+                                    .clipShape(Circle())
+                            }
                         } //: HSTACK
                         .padding(.horizontal)
 
@@ -105,5 +117,5 @@ struct Feed: View {
 }
 
 #Preview {
-    Feed()
+    FeedView(mainMenu: .constant("feed"))
 }

@@ -12,14 +12,32 @@ struct ContentView: View {
         UITextView.appearance().backgroundColor = .clear
     }
 
+    func simpleSuccess() {
+        let generator = UINotificationFeedbackGenerator()
+        generator.notificationOccurred(.success)
+    }
+
+    @State var width = UIScreen.main.bounds.width
+    @State var menu: String = "feed"
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView {
+            HStack(spacing: 0) {
+                LeftMenu(mainMenu: $menu)
+                    .frame(width: width)
+
+                FeedView(mainMenu: $menu)
+                    .frame(width: width)
+
+                Profile(mainMenu: $menu)
+                    .frame(width: width)
+            } //: HStack
+            .offset(x: menu == "left" ? width : 0)
+            .offset(x: menu == "profile" ? -width : 0)
+            .onChange(of: menu) { _ in
+                simpleSuccess()
+            }
         }
-        .padding()
     }
 }
 

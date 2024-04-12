@@ -10,15 +10,24 @@ import SwiftUI
 struct LeftMenu: View {
     @State var width = UIScreen.main.bounds.width
     @State var menu = "suggestions"
+    @Binding var mainMenu: String
 
     var body: some View {
         VStack {
             ZStack {
                 Color.black.ignoresSafeArea()
 
-                LeftMenuTopView()
+                LeftMenuTopView(mainMenu: $mainMenu)
 
-                Suggestions()
+                if menu == "suggestions" {
+                    Suggestions()
+                }
+                if menu == "friends" {
+                    FriendsView()
+                }
+                if menu == "requests" {
+                    RequestsView()
+                }
 
                 VStack {
                     Spacer()
@@ -68,10 +77,12 @@ struct LeftMenu: View {
                                 } //: HStack
                             } //: ZStack
                         } //: VStack
+                        .zIndex(1)
 
                         LinearGradient(colors: [.black, .white.opacity(0)], startPoint: .bottom, endPoint: .top)
                             .ignoresSafeArea()
                             .frame(height: 60)
+                            .opacity(0.9)
                     } //: ZStack
                 } //: VStack
             } //: ZStack
@@ -80,5 +91,5 @@ struct LeftMenu: View {
 }
 
 #Preview {
-    LeftMenu()
+    LeftMenu(mainMenu: .constant("left"))
 }

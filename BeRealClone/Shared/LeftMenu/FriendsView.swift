@@ -19,8 +19,8 @@ struct FriendsView: View {
                             Image("front")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 40, height: 40)
-                                .cornerRadius(30)
+                                .frame(width: 45)
+                                .clipShape(Circle())
 
                             VStack(alignment: .leading) {
                                 Text("Invite friends on BeReal")
