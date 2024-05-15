@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct EnterPhoneNumberView: View {
-    @State var country = Country(isoCode: "US")
-
     @State var showCountryList: Bool = false
-    @State var phoneNumber: String = ""
 
     @State var buttonActive: Bool = false
+
+    @Binding var phoneNumberButtonClicked: Bool
+    @EnvironmentObject var viewModel: AuthenticationViewModel
 
     var body: some View {
         VStack {
@@ -44,7 +44,7 @@ struct EnterPhoneNumberView: View {
                             .frame(width: 75, height: 45)
                             .foregroundColor(.gray)
                             .overlay(
-                                Text("\(country.flag(country: country.isoCode))") + Text("+\(country.phoneCode)").foregroundColor(.white)
+                                Text("\(viewModel.country.flag(country: viewModel.country.isoCode))") + Text("+\(viewModel.country.phoneCode)").foregroundColor(.white)
                                     .font(.system(size: 12))
                                     .fontWeight(.bold)
                             )
@@ -52,13 +52,14 @@ struct EnterPhoneNumberView: View {
                                 self.showCountryList.toggle()
                             }
                         Text("Your Phone")
-                            .foregroundStyle(phoneNumber.isEmpty ? Color.gray : Color.black)
+                            .foregroundStyle(viewModel.phoneNumber.isEmpty ? Color.gray : Color.black)
                             .fontWeight(.heavy)
                             .font(.system(size: 40))
                             .frame(width: 220)
                             .overlay(
-                                TextField("", text: $phoneNumber)
+                                TextField("", text: $viewModel.phoneNumber)
                                     .foregroundColor(.white)
+                                    .keyboardType(.numberPad)
                                     .font(.system(size: 40, weight: .heavy))
                             )
                     } // HStack
@@ -77,9 +78,12 @@ struct EnterPhoneNumberView: View {
                         .multilineTextAlignment(.center)
 
                     Button {
+                        Task {
+                            await viewModel.sendOtp()
+                        }
                     } label: {
                         WhiteButtonView(buttonActive: $buttonActive, text: "Continue")
-                            .onChange(of: phoneNumber) {
+                            .onChange(of: viewModel.phoneNumber) {
                                 newValue in
                                 if !newValue.isEmpty {
                                     buttonActive = true
@@ -87,17 +91,24 @@ struct EnterPhoneNumberView: View {
                                     buttonActive = false
                                 }
                             }
-                    }.disabled(phoneNumber.isEmpty ? true : false)
+                    }.disabled(viewModel.phoneNumber.isEmpty ? true : false)
                 }
             } //: ZStack
         } //: VStack
         .sheet(isPresented: $showCountryList, content: {
-            SelectCountryView(countryChosen: $country)
+            SelectCountryView(countryChosen: $viewModel.country)
         })
+        .overlay {
+            ProgressView().opacity(viewModel.isLoading ? 1 : 0)
+        }
+        .background {
+            NavigationLink(tag: "VERIFICATION", selection: $viewModel.navigationTag) {
+                EnterCodeView()
+            } label: {
+            }
+
+            .labelsHidden()
+        }
         .environment(\.colorScheme, .dark)
     }
-}
-
-#Preview {
-    EnterPhoneNumberView()
 }

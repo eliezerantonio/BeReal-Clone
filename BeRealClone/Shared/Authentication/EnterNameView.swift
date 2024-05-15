@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct EnterNameView: View {
-    @State var name: String = ""
+    @Binding var name: String
     @State var buttonActive = false
+
+    @Binding var nameButtonClicked: Bool
+    @EnvironmentObject var viewModel: AuthenticationViewModel
 
     var body: some View {
         VStack {
@@ -42,6 +45,8 @@ struct EnterNameView: View {
                             .overlay(
                                 TextField("", text: $name)
                                     .font(.system(size: 40, weight: .heavy))
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(.white)
                             )
 
                     }.foregroundStyle(.white)
@@ -51,20 +56,25 @@ struct EnterNameView: View {
                 .padding(.top, 50)
                 VStack {
                     Spacer()
-                    WhiteButtonView(buttonActive: $buttonActive, text: "Continue")
-                        .onChange(of: name) { newValue in
-                            if !newValue.isEmpty {
-                                buttonActive = true
-                            } else if newValue.isEmpty {
-                                buttonActive = false
-                            }
+
+                    Button {
+                        if buttonActive {
+                            self.nameButtonClicked = true
+                        } else {
+                            self.buttonActive = true
                         }
+                    } label: {
+                        WhiteButtonView(buttonActive: $buttonActive, text: "Continue")
+                            .onChange(of: name) { newValue in
+                                if !newValue.isEmpty {
+                                    buttonActive = true
+                                } else if newValue.isEmpty {
+                                    buttonActive = false
+                                }
+                            }
+                    }
                 }
             }
         }
     }
-}
-
-#Preview {
-    EnterNameView()
 }
