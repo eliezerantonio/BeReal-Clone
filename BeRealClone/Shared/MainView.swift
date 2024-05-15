@@ -15,7 +15,9 @@ struct MainView: View {
             if viewModel.userSession == nil {
                 MainAuthenticationView()
             } else {
-                ContentView()
+                if let user = viewModel.currentUser {
+                    ContentView()
+                }
             }
         }
     }

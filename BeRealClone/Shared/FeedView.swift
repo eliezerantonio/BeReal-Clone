@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct FeedView: View {
+    @EnvironmentObject var viewModel: AuthenticationViewModel
     @Binding var mainMenu: String
     var body: some View {
         ZStack {
@@ -92,10 +93,19 @@ struct FeedView: View {
                                     self.mainMenu = "profile"
                                 }
                             } label: {
-                                Image("eliezer")
-                                    .resizable()
-                                    .frame(width: 40, height: 50)
-                                    .clipShape(Circle())
+                                Circle()
+                                    .frame(width: 35, height: 35)
+                                    .cornerRadius(17.5)
+                                    .foregroundStyle(Color(red: 152 / 255, green: 163 / 255, blue: 16 / 255))
+                                    .overlay(
+                                        Text(viewModel.currentUser!.name.prefix(1).uppercased())
+                                            .font(.system(size: 15))
+                                            .foregroundStyle(.white)
+                                    )
+//                                Image("eliezer")
+//                                    .resizable()
+//                                    .frame(width: 40, height: 50)
+//                                    .clipShape(Circle())
                             }
                         } //: HSTACK
                         .padding(.horizontal)

@@ -23,7 +23,7 @@ struct EnterCodeView: View {
                 VStack {
                     HStack {
                         Spacer()
-                        Text("BeReal.")
+                        Text("BeReal.") 
                             .foregroundStyle(.white)
                             .fontWeight(.bold)
                             .font(.system(size: 22))
@@ -35,7 +35,7 @@ struct EnterCodeView: View {
                 VStack {
                     VStack {
                         VStack(alignment: .center, spacing: 8) {
-                            Text("Enter the code we sent to \(viewModel.phoneNumber)")
+                            Text("Enter the code we sent to +\(viewModel.country.phoneCode) \(viewModel.phoneNumber)")
                                 .foregroundStyle(.white)
                                 .fontWeight(.medium)
                                 .font(.system(size: 16))

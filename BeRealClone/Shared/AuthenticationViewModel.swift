@@ -28,6 +28,11 @@ class AuthenticationViewModel: ObservableObject {
 
     static let shared = AuthenticationViewModel()
 
+    init() {
+        userSession = Auth.auth().currentUser
+        fetchUser()
+    }
+
     func sendOtp() async {
         if isLoading { return }
 
@@ -63,7 +68,7 @@ class AuthenticationViewModel: ObservableObject {
             let db = Firestore.firestore()
 
             db.collection("users").document(result.user.uid).setData([
-                "fullname": name,
+                "name": name,
                 "date": year.date,
                 "id": result.user.uid,
             ]) { err in
@@ -71,14 +76,43 @@ class AuthenticationViewModel: ObservableObject {
                     print(err?.localizedDescription)
                 }
             }
-            DispatchQueue.main.async {
+            DispatchQueue.main.async { [self] in
                 self.isLoading = false
+
                 self.userSession = result.user
+                self.currentUser = User(name: name, date: year.date)
+
                 print(self.userSession)
             }
         } catch {
             print("ERROR")
             handleError(error: error.localizedDescription)
+        }
+    }
+
+    func signOut() {
+        userSession = nil
+        try? Auth.auth().signOut()
+    }
+
+    func fetchUser() {
+        guard let uid = userSession?.uid else { return }
+
+        let docRef = Firestore.firestore().collection("users").document(uid)
+
+        docRef.getDocument(as: User.self) { result in
+
+            print(result)
+            switch result {
+            case let .success(user):
+                // An User value was successfully initialized from the DocumentSnapshot.
+
+                self.currentUser = user
+
+            case let .failure(error):
+                // A Book value could not be initialized from the DocumentSnapshot.
+                self.errorMessage = "Error decoding document: \(error.localizedDescription)"
+            }
         }
     }
 }
