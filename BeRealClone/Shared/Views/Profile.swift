@@ -5,8 +5,8 @@
 //  Created by Eliezer Antonio on 08/04/24.
 //
 
+import Kingfisher
 import SwiftUI
-
 struct Profile: View {
     @Binding var mainMenu: String
 
@@ -53,15 +53,23 @@ struct Profile: View {
 //                        .frame(width: 150)
 //                        .clipShape(Circle())
 
-                    Circle()
-                        .frame(width: 130, height: 130)
-                        .cornerRadius(30)
-                        .foregroundColor(Color(red: 152 / 255, green: 163 / 255, blue: 16 / 255))
-                        .overlay(
-                            Text(viewModel.currentUser!.name.prefix(1).uppercased())
-                                .foregroundStyle(.white)
-                                .font(.system(size: 25))
-                        )
+                    if let profileImageUrl = viewModel.currentUser!.profileImageUrl {
+                        KFImage(URL(string: profileImageUrl))
+                            .resizable()
+                            .frame(width: 60, height: 60)
+                            .cornerRadius(60)
+
+                    } else {
+                        Circle()
+                            .frame(width: 130, height: 130)
+                            .cornerRadius(30)
+                            .foregroundColor(Color(red: 152 / 255, green: 163 / 255, blue: 16 / 255))
+                            .overlay(
+                                Text(viewModel.currentUser!.name.prefix(1).uppercased())
+                                    .foregroundStyle(.white)
+                                    .font(.system(size: 25))
+                            )
+                    }
 
                     Text("Eliezer")
                         .foregroundStyle(.white)

@@ -5,8 +5,8 @@
 //  Created by Eliezer Antonio on 08/04/24.
 //
 
+import Kingfisher
 import SwiftUI
-
 struct FeedView: View {
     @EnvironmentObject var viewModel: AuthenticationViewModel
     @Binding var mainMenu: String
@@ -93,15 +93,22 @@ struct FeedView: View {
                                     self.mainMenu = "profile"
                                 }
                             } label: {
-                                Circle()
-                                    .frame(width: 35, height: 35)
-                                    .cornerRadius(17.5)
-                                    .foregroundStyle(Color(red: 152 / 255, green: 163 / 255, blue: 16 / 255))
-                                    .overlay(
-                                        Text(viewModel.currentUser!.name.prefix(1).uppercased())
-                                            .font(.system(size: 15))
-                                            .foregroundStyle(.white)
-                                    )
+                                if let profileImageUrl = viewModel.currentUser!.profileImageUrl {
+                                    KFImage(URL(string: profileImageUrl))
+                                        .resizable()
+                                        .frame(width: 35, height: 35)
+                                        .cornerRadius(60)
+                                } else {
+                                    Circle()
+                                        .frame(width: 35, height: 35)
+                                        .cornerRadius(17.5)
+                                        .foregroundStyle(Color(red: 152 / 255, green: 163 / 255, blue: 16 / 255))
+                                        .overlay(
+                                            Text(viewModel.currentUser!.name.prefix(1).uppercased())
+                                                .font(.system(size: 15))
+                                                .foregroundStyle(.white)
+                                        )
+                                }
 //                                Image("eliezer")
 //                                    .resizable()
 //                                    .frame(width: 40, height: 50)
@@ -123,6 +130,9 @@ struct FeedView: View {
                 } //: VSTACK
             } //: ZTSTACK
         } //: ZSTACK
+        .onAppear {
+            KingfisherManager.shared.cache.clearMemoryCache()
+        }
     }
 }
 
