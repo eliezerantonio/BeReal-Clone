@@ -7,9 +7,12 @@
 
 import SwiftUI
 
-struct Settings: View {
+struct SettingsView: View {
     @State var width = UIScreen.main.bounds.width
     @Environment(\.dismiss) var dismiss
+
+    @EnvironmentObject var viewModel: AuthenticationViewModel
+
     var body: some View {
         NavigationView {
             VStack {
@@ -40,7 +43,7 @@ struct Settings: View {
                     .padding(.top, -10)
                     VStack {
                         NavigationLink {
-                            EditProfile().navigationBarBackButtonHidden()
+                            EditProfileView(currentUser: viewModel.currentUser!).navigationBarBackButtonHidden()
                         } label: {
                             RoundedRectangle(cornerRadius: 16)
                                 .frame(
@@ -49,19 +52,29 @@ struct Settings: View {
                                 .opacity(0.07)
                                 .overlay(
                                     HStack {
-                                        Image("front")
-                                            .resizable()
-                                            .scaledToFit()
+//                                        Image("front")
+//                                            .resizable()
+//                                            .scaledToFit()
+//                                            .frame(width: 60, height: 60)
+//                                            .cornerRadius(30)
+
+                                        Circle()
                                             .frame(width: 60, height: 60)
                                             .cornerRadius(30)
+                                            .foregroundColor(Color(red: 152 / 255, green: 163 / 255, blue: 16 / 255))
+                                            .overlay(
+                                                Text(viewModel.currentUser!.name.prefix(1).uppercased())
+                                                    .foregroundStyle(.white)
+                                                    .font(.system(size: 25))
+                                            )
 
                                         VStack(alignment: .leading) {
-                                            Text("Eliezer")
+                                            Text(viewModel.currentUser!.name)
                                                 .foregroundStyle(.white)
                                                 .fontWeight(.semibold)
                                                 .font(.system(size: 18))
 
-                                            Text("eliezerantonio")
+                                            Text(viewModel.currentUser!.username ?? viewModel.currentUser!.name.lowercased())
                                                 .foregroundStyle(.white)
                                                 .fontWeight(.semibold)
                                                 .font(.system(size: 14))
@@ -230,7 +243,7 @@ struct Settings: View {
                                     NavigationLink {
                                     } label: {
                                         HStack {
-                                            Image(systemName: "square.and.up")
+                                            Image(systemName: "square.and.arrow.up")
                                                 .foregroundColor(.white)
 
                                             Text("Share BeReal")
@@ -358,5 +371,5 @@ struct Settings: View {
 }
 
 #Preview {
-    Settings()
+    SettingsView()
 }

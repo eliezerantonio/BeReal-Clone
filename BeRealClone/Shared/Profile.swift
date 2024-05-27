@@ -9,6 +9,8 @@ import SwiftUI
 
 struct Profile: View {
     @Binding var mainMenu: String
+
+    @EnvironmentObject var viewModel: AuthenticationViewModel
     var body: some View {
         VStack {
             ZStack {
@@ -35,7 +37,7 @@ struct Profile: View {
                         Spacer()
 
                         NavigationLink(destination:
-                            Settings()
+                            SettingsView()
                                 .navigationBarBackButtonHidden()
                             , label: {
                                 ThreeDots(size: 4, color: .white)
@@ -45,11 +47,21 @@ struct Profile: View {
                     Spacer()
                 } //: vStack
                 VStack {
-                    Image("front")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 150)
-                        .clipShape(Circle())
+//                    Image("front")
+//                        .resizable()
+//                        .scaledToFit()
+//                        .frame(width: 150)
+//                        .clipShape(Circle())
+
+                    Circle()
+                        .frame(width: 130, height: 130)
+                        .cornerRadius(30)
+                        .foregroundColor(Color(red: 152 / 255, green: 163 / 255, blue: 16 / 255))
+                        .overlay(
+                            Text(viewModel.currentUser!.name.prefix(1).uppercased())
+                                .foregroundStyle(.white)
+                                .font(.system(size: 25))
+                        )
 
                     Text("Eliezer")
                         .foregroundStyle(.white)
