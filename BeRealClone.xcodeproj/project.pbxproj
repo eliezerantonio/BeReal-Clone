@@ -15,6 +15,9 @@
 		D74F3FE52C040A7F00FD9934 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D74F3FE42C040A7F00FD9934 /* Kingfisher */; };
 		D74F3FE72C0414DE00FD9934 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74F3FE62C0414DE00FD9934 /* CameraView.swift */; };
 		D74F3FE92C042EC600FD9934 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74F3FE82C042EC600FD9934 /* CameraViewModel.swift */; };
+		D74F3FEF2C05343B00FD9934 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74F3FEE2C05343B00FD9934 /* FeedViewModel.swift */; };
+		D74F3FF12C05381700FD9934 /* BeReal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74F3FF02C05381700FD9934 /* BeReal.swift */; };
+		D74F3FF32C05482F00FD9934 /* FeedCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74F3FF22C05482F00FD9934 /* FeedCellViewModel.swift */; };
 		D7B1A56F2BF2D12A00A1CFB1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D7B1A56E2BF2D12A00A1CFB1 /* GoogleService-Info.plist */; };
 		D7B7CE422BF44588002BB29D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B7CE412BF44588002BB29D /* User.swift */; };
 		D7B7CE442BF445E1002BB29D /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D7B7CE432BF445E1002BB29D /* FirebaseDatabaseSwift */; };
@@ -89,6 +92,9 @@
 		D74F3FE12C03F91800FD9934 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		D74F3FE62C0414DE00FD9934 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		D74F3FE82C042EC600FD9934 /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
+		D74F3FEE2C05343B00FD9934 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		D74F3FF02C05381700FD9934 /* BeReal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeReal.swift; sourceTree = "<group>"; };
+		D74F3FF22C05482F00FD9934 /* FeedCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCellViewModel.swift; sourceTree = "<group>"; };
 		D7B1A56E2BF2D12A00A1CFB1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D7B1A5702BF2D14500A1CFB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D7B7CE412BF44588002BB29D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -174,6 +180,7 @@
 				D7F4E30A2BC8B26500726E34 /* Country.swift */,
 				D70B9A782BD6EC4F00BE0334 /* Year.swift */,
 				D7B7CE412BF44588002BB29D /* User.swift */,
+				D74F3FF02C05381700FD9934 /* BeReal.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -184,6 +191,8 @@
 				D74F3FEB2C04362C00FD9934 /* Model */,
 				D70B9A762BD6EC1F00BE0334 /* AuthenticationViewModel.swift */,
 				D74F3FE82C042EC600FD9934 /* CameraViewModel.swift */,
+				D74F3FEE2C05343B00FD9934 /* FeedViewModel.swift */,
+				D74F3FF22C05482F00FD9934 /* FeedCellViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -511,6 +520,7 @@
 				D7F9129A2BC4648600E5D05C /* Profile.swift in Sources */,
 				D74F3FE72C0414DE00FD9934 /* CameraView.swift in Sources */,
 				D7F912AB2BC686A000E5D05C /* LeftMenuTopView.swift in Sources */,
+				D74F3FF32C05482F00FD9934 /* FeedCellViewModel.swift in Sources */,
 				D74F3FE92C042EC600FD9934 /* CameraViewModel.swift in Sources */,
 				D7F912B22BC69AC500E5D05C /* SuggestionCellView.swift in Sources */,
 				D7F912B02BC6973200E5D05C /* Suggestions.swift in Sources */,
@@ -524,7 +534,9 @@
 				D7F912B82BC6F6FB00E5D05C /* RequestsView.swift in Sources */,
 				D7F4E3102BC8C23800726E34 /* EnterPhoneNumberView.swift in Sources */,
 				D7F4E3022BC8949A00726E34 /* EnterNameView.swift in Sources */,
+				D74F3FEF2C05343B00FD9934 /* FeedViewModel.swift in Sources */,
 				D7F912BE2BC75A5B00E5D05C /* ChevronButtonView.swift in Sources */,
+				D74F3FF12C05381700FD9934 /* BeReal.swift in Sources */,
 				D7F4E2FB2BC83FC200726E34 /* NotificationsView.swift in Sources */,
 				D70B9A792BD6EC4F00BE0334 /* Year.swift in Sources */,
 				D7B7CE422BF44588002BB29D /* User.swift in Sources */,

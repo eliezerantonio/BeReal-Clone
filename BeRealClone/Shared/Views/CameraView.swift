@@ -21,6 +21,8 @@ struct CameraView: View {
 
     @ObservedObject var viewModel: CameraViewModel
 
+    @Environment(\.dismiss) var dismiss
+
     init(viewModel: CameraViewModel) {
         self.viewModel = viewModel
     }
@@ -177,9 +179,9 @@ struct CameraView: View {
                 do {
                     Task {
                         await viewModel.postBeReal(frontImageUrl: frontImageUrl, backImageUrl: backImageUrl)
+                        dismiss()
                     }
                 } catch {
-                    
                     print(error.localizedDescription)
                 }
             }

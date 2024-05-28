@@ -80,7 +80,7 @@ class AuthenticationViewModel: ObservableObject {
                 self.isLoading = false
 
                 self.userSession = result.user
-                self.currentUser = User(name: name, date: year.date)
+                self.currentUser = User(name: name, date: year.date, phone: "+\(country.phoneCode)\(phoneNumber)")
 
                 print(self.userSession)
             }

@@ -355,9 +355,12 @@ struct SettingsView: View {
 
                             HStack {
                                 Spacer()
-
-                                Text("Log out")
-                                    .foregroundStyle(.red)
+                                Button {
+                                    AuthenticationViewModel.shared.signOut()
+                                } label: {
+                                    Text("Log out")
+                                        .foregroundStyle(.red)
+                                }
                                 Spacer()
                             } // HStack
                             .padding(.horizontal, width * 0.1)

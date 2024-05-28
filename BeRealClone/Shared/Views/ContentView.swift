@@ -28,7 +28,7 @@ struct ContentView: View {
                 LeftMenu(mainMenu: $menu)
                     .frame(width: width)
 
-                FeedView(mainMenu: $menu)
+                FeedView(feedModel: FeedViewModel(user: viewModel.currentUser!), menu: $menu)
                     .frame(width: width)
 
                 Profile(mainMenu: $menu)
